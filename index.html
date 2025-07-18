@@ -2,10 +2,166 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site</title>
+    <title>Motoboys Unidos</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        header {
+            background-color: #EFE400;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav button, .cadastro-btn {
+            background-color: #9E4518;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #EF8024;
+        }
+
+        .cadastro-btn {
+            background-color: #FF0000;
+        }
+
+        .cadastro-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .slideshow {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 80px; /* espaço para o header */
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: fade 12s infinite;
+            opacity: 0;
+        }
+
+        .slide:nth-child(1) { animation-delay: 0s; }
+        .slide:nth-child(2) { animation-delay: 4s; }
+        .slide:nth-child(3) { animation-delay: 8s; }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            10% { opacity: 1; }
+            30% { opacity: 1; }
+            40% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+            text-align: center;
+            font-size: 36px;
+        }
+
+        footer {
+            background-color: #9E4518;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .instagram-feed {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .instagram-feed iframe {
+            width: 300px;
+            height: 400px;
+            border: none;
+        }
+
+        @media (max-width: 600px) {
+            .overlay {
+                font-size: 24px;
+            }
+
+            nav button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Essa é minha página do GitHub Pages.</p>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <button onclick="alert('Página Home')">Home</button>
+            <button onclick="alert('Página Notícias')">Notícias</button>
+            <button onclick="alert('Página Motoboys')">Motoboys</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0xH2-LX0ZjaO5QdbopfcJUkDtEPWg1ZTSYPRHw8Lx4GMVgA/viewform?usp=sharing&ouid=101805253531985351705" target="_blank">
+                <button class="cadastro-btn">Se cadastrar como Motoboy</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="slideshow">
+        <img src="foto1.png" class="slide">
+        <img src="foto2.png" class="slide">
+        <img src="foto3.png" class="slide">
+        <div class="overlay">Motoboys Unidos de Sua Cidade</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Motoboys Unidos - Todos os direitos reservados</p>
+        <div class="instagram-feed">
+            <p>Últimas publicações do Instagram:</p>
+            <!-- Exemplo de embed do Instagram - ajuste para sua conta -->
+            <iframe src="https://www.instagram.com/p/CvBxHd4MQBj/embed" allowtransparency="true"></iframe>
+            <!-- Troque o link acima pelo seu ou use plugin externo -->
+        </div>
+    </footer>
+
 </body>
 </html>
