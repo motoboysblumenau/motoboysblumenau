@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Motoboys - Motoboys Blumenau</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            background-color: #fff8e1; 
+        }
+
+        header {
+            background-color: #EFE400;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav button, .cadastro-btn {
+            background-color: #9E4518;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #EF8024;
+        }
+
+        .cadastro-btn {
+            background-color: #FF0000;
+        }
+
+        .cadastro-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 120px auto 40px;
+            padding: 20px;
+        }
+
+        .motoboy {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .motoboy h3 {
+            font-size: 22px;
+            color: #9E4518;
+            margin-bottom: 10px;
+        }
+
+        .motoboy p {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        footer {
+            background-color: #9E4518;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-media {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .motoboy h3 {
+                font-size: 18px;
+            }
+
+            .motoboy p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="noticias.html"><button>Notícias</button></a>
+            <a href="motoboys.html"><button>Motoboys</button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0xH2-LX0ZjaO5QdbopfcJUkDtEPWg1ZTSYPRHw8Lx4GMVgA/viewform?usp=sharing&ouid=101805253531985351705" target="_blank">
+                <button class="cadastro-btn">Se cadastrar como Motoboy</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="color:#9E4518; margin-bottom:20px; text-align:center;">Motoboys Disponíveis</h2>
+
+        <!-- Motoboy 1 -->
+        <div class="motoboy">
+            <h3>Henrique</h3>
+            <p><strong>Telefone:</strong> <a href="tel:4792847850" style="color:#EF8024; text-decoration:none;">(47) 9284-7850</a></p>
+            <p><strong>Horário Disponível:</strong> Manhã, Tarde, Noite</p>
+        </div>
+
+        <!-- Para cadastrar mais motoboys, copie e cole o bloco acima e altere as informações -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Motoboys Blumenau - Todos os direitos reservados</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/motoboysblumenau/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/5547992524104" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
