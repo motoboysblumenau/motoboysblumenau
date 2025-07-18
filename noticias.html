@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Notícias - Motoboys Blumenau</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            background-color: #fff8e1; /* Fundo claro */
+        }
+
+        header {
+            background-color: #EFE400;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav button, .cadastro-btn {
+            background-color: #9E4518;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav button:hover {
+            background-color: #EF8024;
+        }
+
+        .cadastro-btn {
+            background-color: #FF0000;
+        }
+
+        .cadastro-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 40px;
+            padding: 20px;
+        }
+
+        .noticia {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .noticia img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .conteudo {
+            padding: 20px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            color: #9E4518;
+            margin-bottom: 10px;
+        }
+
+        .texto {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #9E4518;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-media {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .noticia img {
+                height: 200px;
+            }
+
+            .titulo {
+                font-size: 20px;
+            }
+
+            .texto {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <a href="index.html"><button>Home</button></a>
+            <a href="noticias.html"><button>Notícias</button></a>
+            <a href="#"><button>Motoboys</button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0xH2-LX0ZjaO5QdbopfcJUkDtEPWg1ZTSYPRHw8Lx4GMVgA/viewform?usp=sharing&ouid=101805253531985351705" target="_blank">
+                <button class="cadastro-btn">Se cadastrar como Motoboy</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Notícia 1 -->
+        <div class="noticia">
+            <img src="noticia1.png" alt="Notícia 1">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 1</h2>
+                <p class="texto">Texto da notícia 1 aqui. Pode escrever um resumo ou a notícia completa. Fale sobre acontecimentos importantes, dicas para motoboys, eventos ou informações da cidade.</p>
+            </div>
+        </div>
+
+        <!-- Notícia 2 -->
+        <div class="noticia">
+            <img src="noticia2.png" alt="Notícia 2">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 2</h2>
+                <p class="texto">Texto da notícia 2 aqui. Lembre de manter um texto fácil de ler e objetivo.</p>
+            </div>
+        </div>
+
+        <!-- Notícia 3 -->
+        <div class="noticia">
+            <img src="noticia3.png" alt="Notícia 3">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 3</h2>
+                <p class="texto">Texto da notícia 3 aqui. Coloque dicas de segurança, atualizações ou outras informações úteis.</p>
+            </div>
+        </div>
+
+        <!-- Notícia 4 -->
+        <div class="noticia">
+            <img src="noticia4.png" alt="Notícia 4">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 4</h2>
+                <p class="texto">Texto da notícia 4 aqui. Você pode atualizar com novos conteúdos sempre que quiser.</p>
+            </div>
+        </div>
+
+        <!-- Notícia 5 -->
+        <div class="noticia">
+            <img src="noticia5.png" alt="Notícia 5">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 5</h2>
+                <p class="texto">Texto da notícia 5 aqui. As imagens devem estar no mesmo diretório do HTML.</p>
+            </div>
+        </div>
+
+        <!-- Notícia 6 -->
+        <div class="noticia">
+            <img src="noticia6.png" alt="Notícia 6">
+            <div class="conteudo">
+                <h2 class="titulo">Título da Notícia 6</h2>
+                <p class="texto">Texto da notícia 6 aqui. Se quiser pode deixar menos de 6 notícias também.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Motoboys Blumenau - Todos os direitos reservados</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/motoboysblumenau/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/5547992524104" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
