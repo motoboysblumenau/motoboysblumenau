@@ -109,8 +109,21 @@
             position: relative;
         }
 
-        .instagram-feed {
-            margin-top: 20px;
+        .social-media {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.1);
         }
 
         @media (max-width: 600px) {
@@ -121,6 +134,11 @@
             nav button {
                 font-size: 14px;
                 padding: 8px 12px;
+            }
+
+            .social-media a img {
+                width: 30px;
+                height: 30px;
             }
         }
     </style>
@@ -140,19 +158,22 @@
     </header>
 
     <div class="slideshow">
-        <img src="foto1.png" class="slide">
-        <img src="foto2.png" class="slide">
-        <img src="foto3.png" class="slide">
+        <img src="foto1.png" class="slide" alt="Foto 1">
+        <img src="foto2.png" class="slide" alt="Foto 2">
+        <img src="foto3.png" class="slide" alt="Foto 3">
         <div class="overlay">Motoboys Blumenau</div>
     </div>
 
     <footer>
         <p>&copy; 2025 Motoboys Blumenau - No corre do seu dia-a-dia - Todos os direitos reservados</p>
-        <div class="instagram-feed">
-            <p>Últimas publicações do Instagram:</p>
-            <!-- LightWidget WIDGET -->
-            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-            <iframe src="https://lightwidget.com/widgets/60669a17bda85a829eb3b06bf3300c8e.html"
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/motoboysblumenau/" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/5547992524104" target="_blank">
+                <img src="whatsapp.png" alt="WhatsApp">
+            </a>
         </div>
     </footer>
 
