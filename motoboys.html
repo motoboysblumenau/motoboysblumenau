@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Motoboys - Motoboys Blumenau</title>
+    <link rel="icon" type="image/png" href="/icone.png?v=20250717">
     <style>
         * {
             margin: 0; 
@@ -67,6 +68,24 @@
             padding: 20px;
         }
 
+        .container h2 {
+            color: #9E4518;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .description {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+
         .motoboy {
             background-color: #fff;
             border-radius: 12px;
@@ -89,6 +108,47 @@
             margin: 5px 0;
         }
 
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20b358;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #20b358;
+        }
+
         footer {
             background-color: #9E4518;
             color: white;
@@ -101,6 +161,7 @@
             margin-top: 15px;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 20px;
         }
 
@@ -114,13 +175,50 @@
             transform: scale(1.1);
         }
 
+        .social-media a.whatsapp-group-btn {
+            text-decoration: none;
+        }
+
         @media (max-width: 768px) {
+            .container h2 {
+                font-size: 24px;
+            }
+
             .motoboy h3 {
                 font-size: 18px;
             }
 
             .motoboy p {
                 font-size: 14px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            nav button {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .social-media a img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .whatsapp-btn {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+
+            .whatsapp-float {
+                width: 40px;
+                height: 40px;
+            }
+
+            .whatsapp-float img {
+                width: 24px;
+                height: 24px;
             }
         }
     </style>
@@ -140,7 +238,12 @@
     </header>
 
     <div class="container">
-        <h2 style="color:#9E4518; margin-bottom:20px; text-align:center;">Motoboys Cadastrados:</h2>
+        <h2>Motoboys Cadastrados:</h2>
+        <div class="description">
+            <p>
+                Atenção: os motoboys cadastrados realizaram inscrição via formulário, e aceitaram os termos de terem seus dados de: <strong>NOME</strong>, <strong>TELEFONE</strong> divulgados pela página. A Motoboys Blumenau não tem nenhuma ligação empregatícia com os motoboys listados, apenas estamos fazendo a divulgação para clientes que querem fazer orçamento de entregas ou rotas. Para ser direcionado para o WhatsApp do motoboy, só clicar em cima do número de telefone.
+            </p>
+        </div>
 
         <!-- Motoboy 1 -->
         <div class="motoboy">
@@ -148,7 +251,7 @@
             <p><strong>Telefone:</strong> <a href="https://wa.me/5547988566729" style="color:#EF8024; text-decoration:none;">(47) 98856-6729</a></p>
             <p><strong>Horário Disponível:</strong> Manhã, Tarde, Noite</p>
         </div>
-                <!-- Motoboy 2 -->
+        <!-- Motoboy 2 -->
         <div class="motoboy">
             <h3>Henrique</h3>
             <p><strong>Telefone:</strong> <a href="https://wa.me/5547992847850" style="color:#EF8024; text-decoration:none;">(47) 99284-7850</a></p>
@@ -159,14 +262,21 @@
 
     </div>
 
+    <a href="https://wa.me/554792524104" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+
     <footer>
         <p>© 2025 Motoboys Blumenau - Todos os direitos reservados</p>
         <div class="social-media">
             <a href="https://www.instagram.com/motoboysblumenau/" target="_blank">
                 <img src="instagram.png" alt="Instagram">
             </a>
-            <a href="https://wa.me/5547992524104" target="_blank">
+            <a href="https://wa.me/554792524104" target="_blank">
                 <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://chat.whatsapp.com/FzaVR48qy9i24b9WakWPUZ" target="_blank" class="whatsapp-group-btn">
+                <button class="whatsapp-btn">Entrar no grupo do WhatsApp</button>
             </a>
         </div>
     </footer>
