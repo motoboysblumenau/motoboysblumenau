@@ -67,7 +67,7 @@
             height: 100vh;
             width: 100%;
             overflow: hidden;
-            margin-top: 80px; /* espaço para o header */
+            margin-top: 80px;
         }
 
         .slide {
@@ -100,10 +100,11 @@
             text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
             text-align: center;
             font-size: 36px;
+            padding: 20px;
         }
 
         .overlay-img {
-            max-width: 400px; /* Ajuste o tamanho máximo da imagem */
+            max-width: 400px;
             width: 100%;
             height: auto;
         }
@@ -122,6 +123,49 @@
 
         .whatsapp-btn:hover {
             background-color: #20b358;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20b358;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .sobre-nos {
+            margin-top: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+
+        .sobre-nos h2 {
+            margin-bottom: 10px;
+            font-size: 28px;
         }
 
         footer {
@@ -170,7 +214,25 @@
             }
 
             .overlay-img {
-                max-width: 250px; /* Ajuste para telas menores */
+                max-width: 250px;
+            }
+
+            .sobre-nos {
+                font-size: 16px;
+            }
+
+            .sobre-nos h2 {
+                font-size: 22px;
+            }
+
+            .whatsapp-float {
+                width: 40px;
+                height: 40px;
+            }
+
+            .whatsapp-float img {
+                width: 24px;
+                height: 24px;
             }
         }
     </style>
@@ -194,13 +256,19 @@
         <img src="foto2.png" class="slide" alt="Foto 2">
         <img src="foto3.png" class="slide" alt="Foto 3">
         <div class="overlay">
-            <img src="/imagem.png?v=20250717" alt="Motoboys Blumenau" class="overlay-img" style="display: block;">
-            <br>
-            <a href="https://chat.whatsapp.com/FzaVR48qy9i24b9WakWPUZ" target="_blank">
-                <button class="whatsapp-btn">Entrar no grupo do WhatsApp</button>
-            </a>
+            <!-- Seção Sobre Nós -->
+            <div class="sobre-nos">
+                <h2>Sobre nós</h2>
+                <p>
+                    Somos a maior comunidade de motoboys de Blumenau - SC. Somos uma comunidade dedicada a conectar clientes e motoboys em Blumenau. Nosso objetivo é facilitar o dia a dia com entregas rápidas e seguras e com profissionais comprometidos. Aqui você encontra informação, oportunidade e parceria.
+                </p>
+            </div>
         </div>
     </div>
+
+    <a href="https://wa.me/554792524104" target="_blank" class="whatsapp-float">
+        <img src="https://via.placeholder.com/40" alt="WhatsApp">
+    </a>
 
     <footer>
         <p>© 2025 Motoboys Blumenau - No corre do seu dia-a-dia - Todos os direitos reservados</p>
@@ -209,7 +277,7 @@
             <a href="https://www.instagram.com/motoboysblumenau/" target="_blank">
                 <img src="instagram.png" alt="Instagram">
             </a>
-            <a href="https://wa.me/5547992524104" target="_blank">
+            <a href="https://wa.me/554792524104" target="_blank">
                 <img src="whatsapp.png" alt="WhatsApp">
             </a>
         </div>
