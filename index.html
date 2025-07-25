@@ -117,7 +117,6 @@
             border-radius: 8px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 20px;
             transition: 0.3s;
         }
 
@@ -180,6 +179,7 @@
             margin-top: 15px;
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 20px;
         }
 
@@ -191,6 +191,10 @@
 
         .social-media a img:hover {
             transform: scale(1.1);
+        }
+
+        .social-media a.whatsapp-group-btn {
+            text-decoration: none;
         }
 
         @media (max-width: 600px) {
@@ -233,6 +237,11 @@
             .whatsapp-float img {
                 width: 24px;
                 height: 24px;
+            }
+
+            .whatsapp-btn {
+                font-size: 14px;
+                padding: 8px 12px;
             }
         }
     </style>
@@ -279,6 +288,9 @@
             </a>
             <a href="https://wa.me/554792524104" target="_blank">
                 <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://chat.whatsapp.com/FzaVR48qy9i24b9WakWPUZ" target="_blank" class="whatsapp-group-btn">
+                <button class="whatsapp-btn">Entrar no grupo do WhatsApp</button>
             </a>
         </div>
     </footer>
