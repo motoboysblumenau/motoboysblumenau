@@ -1,0 +1,214 @@
+﻿Diagnose log at 2026-08-21T23:18:40Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.7.3+5fa7116896c82164996a609accd1c5ad90fe730a
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19045)
+Reading environment variables... OK
+ Variables:
+OneDriveConsumer=C:\Users\henri\OneDrive
+GCM_GUI_PROMPT=False
+MSYSTEM=MINGW64
+ProgramW6432=C:\Program Files
+PAGER=cat
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 63 Stepping 2, GenuineIntel
+TMP=C:\Users\henri\AppData\Local\Temp
+CODEX_INTERNAL_ORIGINATOR_OVERRIDE=codex_vscode
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+ProgramData=C:\ProgramData
+RUST_LOG=warn
+VSCODE_CWD=C:\Users\henri\AppData\Local\Programs\Microsoft VS Code
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-2EOT6IR
+PROCESSOR_REVISION=3f02
+TMPDIR=C:\Users\henri\AppData\Local\Temp
+TEMP=C:\Users\henri\AppData\Local\Temp
+USERPROFILE=C:\Users\henri
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+LOGONSERVER=\\DESKTOP-2EOT6IR
+TERM=dumb
+NO_COLOR=1
+SystemRoot=C:\WINDOWS
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_17728_DIXLDLDMDRGGXYSP
+CODEX_THREAD_ID=01a02693-030f-7101-912e-2527db9d2822
+PLINK_PROTOCOL=ssh
+GH_PAGER=cat
+OneDrive=C:\Users\henri\OneDrive
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\henri\bin;C:\Users\henri\.codex\tmp\arg0\codex-arg0TWXBBw;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\GitHub CLI\;C:\Users\henri\AppData\Local\Programs\Python\Launcher\;C:\Users\henri\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\henri\AppData\Local\Programs\Python\Python312\;C:\Users\henri\AppData\Local\Microsoft\WindowsApps;C:\Users\henri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\henri\AppData\Roaming\npm;C:\Users\henri\AppData\Local\Programs\socialstream;C:\Users\henri\AppData\Local\Programs\Ollama;C:\Users\henri\.local\bin;C:\Users\henri\AppData\Local\GitHubDesktop\bin;C:\Users\henri\.dotnet\tools;C:\Users\henri\AppData\Local\Programs\Lua\bin;C:\Users\henri\AppData\Local\Microsoft\WinGet\Packages\DenoLand.Deno_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\henri\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg.Shared_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.1-full_build-shared\bin;;c:\Users\henri\.vscode\extensions\openai.chatgpt-26.818.32112-win32-x64\bin\windows-x86_64
+CommonProgramFiles=C:\Program Files\Common Files
+windir=C:\WINDOWS
+PROCESSOR_LEVEL=6
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S=7e278296881e246288158627d6f66ac980dc372f751e1b3f2b6e14e9e7593966
+DEBUG=release
+APPLICATION_INSIGHTS_NO_STATSBEAT=true
+HOMEPATH=\Users\henri
+VSCODE_NLS_CONFIG={"userLocale":"en-us","osLocale":"pt-br","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\henri\\AppData\\Local\\Programs\\Microsoft VS Code\\110a328ea5\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+ALLUSERSPROFILE=C:\ProgramData
+NODE_REPL_TRUSTED_CODE_PATHS=C:\Users\henri\.codex;C:\Users\henri\AppData\Local\OpenAI\Codex\runtimes\cua_node\5b26acff135cec6b\bin\node_modules
+USERNAME=henri
+VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+PROCESSOR_ARCHITECTURE=AMD64
+SESSIONNAME=Console
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+VSCODE_PID=17728
+VSCODE_CRASH_REPORTER_PROCESS_TYPE=extensionHost
+GIT_TRACE2_PARENT_SID=f40d8299-dd84-43fa-93da-5812e9497598
+SystemDrive=C:
+NUMBER_OF_PROCESSORS=12
+OS=Windows_NT
+CODEX_SESSION_ID=01a02693-030f-7101-912e-2527db9d2822
+CODEX_PERMISSION_PROFILE=:danger-full-access
+LANG=C.UTF-8
+ComSpec=C:\WINDOWS\system32\cmd.exe
+NoDefaultCurrentDirectoryInExePath=1
+ProgramFiles=C:\Program Files
+HOME=C:\Users\henri
+VSCODE_IPC_HOOK=\\.\pipe\8816c9d2-1.134.0-main-sock
+ProgramFiles(x86)=C:\Program Files (x86)
+ELECTRON_RUN_AS_NODE=1
+PSModulePath=C:\Users\henri\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+CODEX_CI=1
+LC_ALL=C.UTF-8
+APPDATA=C:\Users\henri\AppData\Roaming
+USERDOMAIN=DESKTOP-2EOT6IR
+COMPUTERNAME=DESKTOP-2EOT6IR
+LC_CTYPE=C.UTF-8
+LOCALAPPDATA=C:\Users\henri\AppData\Local
+BROWSER_USE_AVAILABLE_BACKENDS=chrome,iab
+CommonProgramW6432=C:\Program Files\Common Files
+GIT_PAGER=cat
+COLORTERM=
+VSCODE_CODE_CACHE_PATH=C:\Users\henri\AppData\Roaming\Code\CachedData\110a328ea54b42367b803ec53ee0bf52ef26b419
+PUBLIC=C:\Users\Public
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\henri\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\henri\AppData\Local\Temp\d50046c0a7ecca8ce3fc76ec'... OK
+Reading from temporary file 'C:\Users\henri\AppData\Local\Temp\d50046c0a7ecca8ce3fc76ec'... OK
+Deleting temporary file 'C:\Users\henri\AppData\Local\Temp\d50046c0a7ecca8ce3fc76ec'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\henri
+UserDataDirectoryPath: C:\Users\henri\.gcm
+GetCurrentDirectory(): H:\Backup\documentos\GitHub\motoboysblumenau
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:59375/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.54.0.windows.1'
+Locating current repository...Git repository at 'H:/Backup/documentos/GitHub/motoboysblumenau/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/henri/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/henri/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/henri/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/henri/.gitconfig	filter.lfs.required=true
+file:C:/Users/henri/.gitconfig	user.name=motoboysblumenau
+file:C:/Users/henri/.gitconfig	user.email=motoboysblumenau@gmail.com
+file:C:/Users/henri/.gitconfig	credential.https://github.com.helper=
+file:C:/Users/henri/.gitconfig	credential.https://github.com.helper=!'C:\Program Files\GitHub CLI\gh.exe' auth git-credential
+file:C:/Users/henri/.gitconfig	credential.https://gist.github.com.helper=
+file:C:/Users/henri/.gitconfig	credential.https://gist.github.com.helper=!'C:\Program Files\GitHub CLI\gh.exe' auth git-credential
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	submodule.active=.
+file:.git/config	remote.origin.url=https://github.com/motoboysblumenau/motoboysblumenau.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+file:.git/config	lfs.repositoryformatversion=0
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\henri\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\henri\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
