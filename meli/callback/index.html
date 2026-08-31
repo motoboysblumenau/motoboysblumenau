@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#111827">
+    <title>Mercado Livre | Moto Promo Bot</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #172033;
+        background: #f5f6f8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at top, rgba(255, 230, 0, 0.2), transparent 34rem),
+          #f5f6f8;
+      }
+
+      .card {
+        width: min(100%, 560px);
+        padding: clamp(24px, 6vw, 42px);
+        border: 1px solid #e1e5eb;
+        border-radius: 22px;
+        background: #fff;
+        box-shadow: 0 24px 70px rgba(23, 32, 51, 0.13);
+      }
+
+      .brand {
+        margin: 0 0 8px;
+        color: #8a6300;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        color: #111827;
+        font-size: clamp(1.8rem, 7vw, 2.6rem);
+        line-height: 1.08;
+      }
+
+      .service {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 18px 0 26px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #fff6b8;
+        color: #594600;
+        font-size: 0.9rem;
+        font-weight: 750;
+      }
+
+      .service::before {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #ffe600;
+        box-shadow: 0 0 0 4px rgba(255, 230, 0, 0.22);
+        content: "";
+      }
+
+      .status-icon {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 16px;
+        border-radius: 50%;
+        background: #e9f8ef;
+        color: #177245;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
+
+      .status-icon.error { background: #ffeded; color: #b42318; }
+      .status-icon.neutral { background: #edf2f7; color: #52606d; }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1.28rem;
+        line-height: 1.35;
+      }
+
+      p {
+        margin: 0;
+        color: #566074;
+        line-height: 1.65;
+      }
+
+      .details {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #e7eaf0;
+      }
+
+      .label {
+        display: block;
+        margin-bottom: 8px;
+        color: #4d5668;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      code {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        overflow-wrap: anywhere;
+        border: 1px solid #dce1e8;
+        border-radius: 12px;
+        background: #f7f8fa;
+        color: #162032;
+        font: 600 0.95rem/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+        user-select: all;
+      }
+
+      .state { margin-top: 18px; }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      button,
+      .home-link {
+        min-height: 46px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+        border-radius: 11px;
+        font: inherit;
+        font-weight: 750;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button {
+        border: 1px solid #111827;
+        background: #111827;
+        color: #fff;
+      }
+
+      button:hover { background: #293448; }
+      button:focus-visible,
+      .home-link:focus-visible { outline: 3px solid rgba(42, 111, 219, 0.35); outline-offset: 3px; }
+
+      .home-link {
+        border: 1px solid #d9dee6;
+        color: #273247;
+        background: #fff;
+      }
+
+      .copy-feedback {
+        min-height: 24px;
+        margin-top: 12px;
+        color: #177245;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      [hidden] { display: none !important; }
+
+      @media (max-width: 440px) {
+        body { padding: 14px; }
+        .card { border-radius: 17px; }
+        .actions > * { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" aria-labelledby="page-title">
+      <p class="brand">Moto Promo Bot</p>
+      <h1 id="page-title">Conexão da conta</h1>
+      <div class="service">Mercado Livre</div>
+
+      <section aria-live="polite">
+        <div id="status-icon" class="status-icon neutral" aria-hidden="true">i</div>
+        <h2 id="status-title">Verificando autorização…</h2>
+        <p id="status-message"></p>
+      </section>
+
+      <section id="authorization-details" class="details" hidden>
+        <span class="label">Código de autorização</span>
+        <code id="authorization-code"></code>
+
+        <div id="state-details" class="state" hidden>
+          <span class="label">State para verificação</span>
+          <code id="authorization-state"></code>
+        </div>
+
+        <div class="actions">
+          <button id="copy-code" type="button">Copiar código</button>
+          <a class="home-link" href="https://motoboysblumenau.com.br" rel="noreferrer">Voltar ao site</a>
+        </div>
+        <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
+      </section>
+
+      <div id="single-home-action" class="actions" hidden>
+        <a class="home-link" href="https://motoboysblumenau.com.br" rel="noreferrer">Voltar ao site</a>
+      </div>
+    </main>
+
+    <script>
+      (() => {
+        'use strict';
+
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const state = params.get('state');
+        const error = params.get('error');
+        const errorDescription = params.get('error_description');
+        const icon = document.getElementById('status-icon');
+        const title = document.getElementById('status-title');
+        const message = document.getElementById('status-message');
+        const details = document.getElementById('authorization-details');
+        const homeAction = document.getElementById('single-home-action');
+
+        // Evita manter o código sensível na barra de endereço e no histórico.
+        if (window.location.search) {
+          window.history.replaceState(null, '', window.location.pathname);
+        }
+
+        if (error) {
+          icon.className = 'status-icon error';
+          icon.textContent = '!';
+          title.textContent = 'A autorização não foi concluída';
+          message.textContent = errorDescription
+            ? `${errorDescription} (${error})`
+            : `O Mercado Livre retornou o erro: ${error}.`;
+          homeAction.hidden = false;
+          return;
+        }
+
+        if (!code) {
+          icon.className = 'status-icon neutral';
+          icon.textContent = 'i';
+          title.textContent = 'Nenhum código de autorização foi recebido';
+          message.textContent = 'Esta página é utilizada pelo Moto Promo Bot durante a conexão com o Mercado Livre.';
+          homeAction.hidden = false;
+          return;
+        }
+
+        icon.className = 'status-icon';
+        icon.textContent = '✓';
+        title.textContent = 'Autorização do Mercado Livre recebida com sucesso';
+        message.textContent = 'Volte ao Moto Promo Bot e cole este código para concluir a conexão.';
+        document.getElementById('authorization-code').textContent = code;
+        details.hidden = false;
+
+        if (state) {
+          document.getElementById('authorization-state').textContent = state;
+          document.getElementById('state-details').hidden = false;
+        }
+
+        const feedback = document.getElementById('copy-feedback');
+        document.getElementById('copy-code').addEventListener('click', async () => {
+          try {
+            await copyText(code);
+            feedback.textContent = 'Código copiado com sucesso.';
+          } catch {
+            feedback.textContent = 'Não foi possível copiar automaticamente. Selecione o código acima e copie manualmente.';
+          }
+        });
+
+        async function copyText(value) {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(value);
+            return;
+          }
+
+          const temporary = document.createElement('textarea');
+          temporary.value = value;
+          temporary.setAttribute('readonly', '');
+          temporary.style.position = 'fixed';
+          temporary.style.opacity = '0';
+          document.body.appendChild(temporary);
+          temporary.select();
+          const copied = document.execCommand('copy');
+          temporary.remove();
+          if (!copied) throw new Error('copy_failed');
+        }
+      })();
+    </script>
+  </body>
+</html>
