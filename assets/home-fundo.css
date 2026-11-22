@@ -1,0 +1,19 @@
+main > section:has(> .premium-grid) {
+  background-image: url("./motoboys-blumenau-fundo.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main > section:has(> .premium-grid) > div:first-child {
+  background-image: linear-gradient(90deg, rgb(5 5 5 / 88%), rgb(5 5 5 / 64%) 44%, rgb(5 5 5 / 16%) 76%), linear-gradient(0deg, rgb(5 5 5 / 56%), transparent 42%);
+}
+
+@media (max-width: 767px) {
+  main > section:has(> .premium-grid) {
+    background-position: 65% center;
+  }
+
+  main > section:has(> .premium-grid) > div:first-child {
+    background-image: linear-gradient(180deg, rgb(5 5 5 / 85%), rgb(5 5 5 / 68%) 45%, rgb(5 5 5 / 24%) 77%, rgb(5 5 5 / 58%));
+  }
+}
